@@ -1,0 +1,37 @@
+package com.mycompany.app;
+
+import junit.framework.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
+
+/**
+ * Unit test for simple App.
+ */
+public class AppTest 
+    extends TestCase
+{
+     public void testYok() {
+      String[] str = new String[]{"b","i","l","o","d","e","v"};
+      assertTrue(new App().rr(str, 0,6));
+    }
+
+    public void testYok() {
+      String[] str = new String[]{"b","i","l","o","d","e","v"};
+      assertTrue(new App().rr(str, 3,5));
+    }
+
+    public void testVar() {
+      String[] str = new String[]{"b","i","l","4","8","1","o","d","e","v"};
+      assertFalse(new App().rr(str, 0,9));
+    }
+
+    public void tesVar() {
+      String[] str = new String[]{"b","~","l","4","8","*","o","/","e","v"};
+      assertFalse(new App().rr(str, 0,9));
+    }
+
+    public void testNull() {
+      assertFalse(new App().rr(null, 0, 12));
+    }
+
+}
