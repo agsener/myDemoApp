@@ -1,6 +1,2 @@
-rr() fonksiyonu 3 tane parametre alir.
-1- String arrayi
-2- int baslangic indexi
-3- int son index
+[![Build Status](https://travis-ci.org/agsener/myDemoApp.svg?branch=master)](https://travis-ci.org/agsener/myDemoApp)
 
-Fonksiyona turkce kar. gondermemek gerekiyor.
